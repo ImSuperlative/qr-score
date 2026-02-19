@@ -1,0 +1,27 @@
+[package]
+name = "qr-score"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+lto = true
+strip = true
+opt-level = "z"
+codegen-units = 1
+
+[dependencies]
+resvg = "0.47"
+usvg = "0.47"
+tiny-skia = "0.12"
+rxing = "0.8"
+rqrr = "0.10"
+image = "0.25"
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+toml = { version = "1.0", default-features = false, features = ["parse", "serde"] }
+
+[dev-dependencies]
+qrcode = "0.14"

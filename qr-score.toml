@@ -1,0 +1,46 @@
+render_size = 400
+
+# Blur
+blur_light_sigma = 1.0
+blur_heavy_sigma = 2.0
+
+# Contrast (tests both +value and -value)
+contrast = 30.0
+contrast_strict = 50.0
+
+# Luminance / brightness (tests both +value and -value)
+luminance = 20
+luminance_strict = 40
+
+# Hue rotation in degrees (tests both +value and -value)
+hue = 45.0
+hue_strict = 90.0
+
+# Saturation (tests both +value and -value)
+saturation = 30.0
+saturation_strict = 50.0
+
+[weights]
+downscale_1x = 1
+downscale_2x = 3
+downscale_3x = 3
+downscale_4x = 2
+blur_light = 2
+blur_heavy = 2
+contrast_up = 1
+contrast_down = 1
+contrast_strict_up = 1
+contrast_strict_down = 1
+luminance_up = 1
+luminance_down = 1
+luminance_strict_up = 1
+luminance_strict_down = 1
+hue_up = 1
+hue_down = 1
+hue_strict_up = 1
+hue_strict_down = 1
+saturation_up = 1
+saturation_down = 1
+saturation_strict_up = 1
+saturation_strict_down = 1
+contrast_ratio = 70
